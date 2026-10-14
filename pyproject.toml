@@ -7,7 +7,11 @@ authors = [
     { name = "reddymaestro12", email = "reddymaestro12@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "dotenv>=0.9.9",
+    "langchain>=1.4.5",
+    "langchain-openai>=1.7.1",
+]
 
 [project.scripts]
 agenticai = "agenticai:main"
