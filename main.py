@@ -1,5 +1,5 @@
 from config import load_config
-from agent_factory import create_weather_agent
+from agents_factory.agent_factory import create_weather_agent
 
 def print_messages(messages):
     for message in messages:
