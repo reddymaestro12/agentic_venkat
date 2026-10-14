@@ -1,4 +1,4 @@
-from config import load_config
+from configs.config import load_config
 from agents_factory.agent_factory import create_weather_agent
 
 def print_messages(messages):
