@@ -17,6 +17,7 @@ dependencies = [
     "langgraph>=1.2.15",
     "pypdf>=6.20.1",
     "python-dotenv>=1.2.4",
+    "uuid6>=2025.0.1",
 ]
 
 [project.scripts]
