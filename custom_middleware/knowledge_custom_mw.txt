@@ -1,0 +1,19 @@
+what is custom middleware - custome codethat runs before ,after or around the agent exceution
+- when to use it: when you want the behaviuor you wanted tp happen automatically for every request
+  1.logging : user => agent - save all requests in a log file i.e debugging and auditing
+  2.security check : User → "Delete all records"
+    Middleware: "Does this user have admin access?"
+    Agent executes only if approved.
+    use case : authentication,authorization
+  3.add user context: User → "What's my account balance?"
+    Middleware automatically adds:
+    Customer ID = 12345
+    use case :user personalization,Session management
+
+- there are two types of custome middleware
+  - node style hooks :always runs at specific point(node) inte agent execution flow
+    - when to use :
+       - Modify prompts before model call.
+       - Validate tool arguments.
+       - Log tool execution.
+  - wrap style hooks:
